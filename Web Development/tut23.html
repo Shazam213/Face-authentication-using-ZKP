@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigationn menu</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 5px;
+        }
+        .navbar ul{
+            overflow: auto;
+            /* to have background color even though float is active */
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            /* this removes the bullets that appear because of unordered list */
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            margin: 25px;
+        }
+        .search{
+            padding: 15px 75px;
+            float: right;
+            color: white;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 3px 4px;
+            width: 125px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Seacrh this website"  >
+                </div>
+            </ul>
+            
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders and Background</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            /* border-width: 4px; */
+            /* border-color: green; */
+            /* border-style:solid; */
+            border-radius: 11px; 
+            /* border-radius results in the curving of the borders sround the edges */
+            /* givin border style is neccessary and not the color the default color is taken as black so if we not specify the border color its fine but specifying the border style is imp */
+            /* border width is also opt */
+            /* width color and style of a border can be written togerther in the following format */
+            border : 4px solid green;
+        }
+
+        #secondPara{
+            background-color: rgb(184, 60, 60);
+            height: 100px;
+            width: 455px;
+            border-top:2px solid rgb(17, 50, 81) ;
+            border-bottom:2px solid rgb(195, 33, 22) ;
+            border-right:2px solid rgb(19, 20, 20) ;
+            border-left: 2px solid rgb(50, 30, 30);
+            border-top-left-radius: 4px ;
+            border-top-right-radius: 140px ;
+            border-bottom-left-radius: 50px ;
+            border-bottom-right-radius: 200px;
+
+        }
+
+        #thirdPara{
+            height: 500px;
+            width: 500px;
+            background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwahttps://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcodewithharry.nyc3.cdn.digitaloceanspaces.com%2Fassets%2F090fefe24d23d47584f6ddc7eb5a241e.png&w=384&q=75G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+            /* You can also specify path if img in same folder */
+            border : 2px solid red;
+            color: yellow;
+            /* background-repeat: repeat-x; */
+            /* only repeats in X axis */
+            /* background-repeat: repeat-y; */
+            /* only repeats in Y axis */
+            background-repeat: no-repeat;
+            /* only once and no repeat */
+            background-position: center center;
+            /* image comes in the center */
+            background-position: center top;
+            /* center of the X axis and top means top of the Y axis */
+            background-position: 122px top;
+            /* 122px from the top left corner on the X axis and top of the Y axis */
+            /* You can also make several conditions */
+            /* IMP->
+            If one value is top or bottom, then the other value may not be top or bottom. If one value is left or right, then the other value may not be left or right. This means, e.g., that top top and left right are not valid. */
+            background-size: cover;
+            /* covers the entire screen */
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id ="firstPara">THis is para</p>
+
+    <h3>This is second heading</h3>
+    <p id ="secondPara">THis is second para</p>
+
+    <h3>This is third heading</h3>
+    <p id ="thirdPara">THis is third para</p>
+    
+</body>
+</html>

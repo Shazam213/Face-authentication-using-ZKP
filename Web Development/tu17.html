@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS fonts</title>
+    <!-- Web safe fonts -> preinstalled fonts in the computer
+    Web fonts -> fonts that we need to import and are not preinstalled  -->
+    <!-- font-family ->Specifies a prioritized list of font family names or generic family names. A user agent iterates through the list of family names until it matches an available font that contains a glyph for the character to be rendered.
+
+    Syntax: <family-name> -->
+        <!-- For web fonts google the font you want and get its html use case and put the font family as well as link to download the font in the html file -->
+    <style>
+        p{
+            font-family: "Arial, Helvetica, sans-serif";
+            font-size: 33px;
+            /* 1/96 of an inch is pixel */
+            line-height: 1.3em;
+            /* Spacing between two lines */
+            /* em is multipe of font size i.e 8.3em means 
+            8.3 X parent_font_size  */
+        }
+        span{
+            font-weight: bold;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <h4>CSS fonts</h4>
+    <p>Lets play with <span>Fonts</span>. It is very exciting</p>
+    
+</body>
+</html>

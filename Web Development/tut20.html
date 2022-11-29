@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* '*' is a UNIVERSAL selector */
+        *{
+            box-sizing: border-box;
+            margin :0;
+            padding: 0;
+        }
+
+        body{
+            background-color: blue; 
+        }
+
+        .container{
+            background-color: burlywood;
+            border: 3px solid blue;
+            /* padding: 19px; */
+            /* padding: top right bottom left; 
+            padding shorthand operator */
+            /* margin: top right bottom left; 
+            margin shorthand operator */
+            /* padding: 23px 56px 6px 78px ; */
+            /* We can set diff padding in diff sides  */
+            /* padding-top: ;
+            padding-left: ;
+            padding-right: ;
+            padding-bottom: ; */
+            /* padding: y(top/bottom) x(left/right) */
+            padding: 34px 19px;
+            /* margin: y(top/bottom) x(left/right) */
+            margin: 34px 19px;
+            border-radius: 23px; 
+            width: 500px;
+            /* See whenever we change padding or margin the width changes, if we want to adhere to the width specified then we can use box modelling */
+            /* lly for margin */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et erat auctor, scelerisque nulla sit amet, pretium nunc. Praesent nec lacinia mi. Duis placerat viverra dolor. Proin eget nisl euismod turpis porttitor facilisis. Proin euismod, massa eu porttitor vestibulum, arcu.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et erat auctor, scelerisque nulla sit amet, pretium nunc. Praesent nec lacinia mi. Duis placerat viverra dolor. Proin eget nisl euismod turpis porttitor facilisis. Proin euismod, massa eu porttitor vestibulum, arcu.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et erat auctor, scelerisque nulla sit amet, pretium nunc. Praesent nec lacinia mi. Duis placerat viverra dolor. Proin eget nisl euismod turpis porttitor facilisis. Proin euismod, massa eu porttitor vestibulum, arcu.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- Selectors are used to find the element whose property will be set
+Selectors are used to target the HTML elements
+Selectors make it easy for us to easily target single/multiple HTML elements in the markup -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* This is for every <p> tag */
+        /* Element Selectors */
+        /* p{
+            color: red;
+        } */
+        /* used to targer a specific element with id as redElement */
+        #redElement{
+            color: red;
+        }
+        /* used to targer a specific element with class name as redElement */
+        .redElement{
+            color: red;
+        }
+        /* iF we change he id of the specific para then this will not be applicable to any para */
+        /* Combined Grouping Selectors */
+        footer, span{
+            background-color: pink;
+        }
+        p{
+            border: 2px solid red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p>This is a simple para to demonstrate css selectors</p>
+    <!-- <p id ="redElement">This is a another simple para to demonstrate css selectors</p> -->
+    <p id ="SecondELement" class =" redElement">This is a another simple para to demonstrate css selectors</p>
+    <div>
+        <p>This is a yet another simple para to demonstrate css selectors</p>
+        <span>This is span</span>
+    </div>
+    <footer>this is footer</footer>
+</body>
+</html>

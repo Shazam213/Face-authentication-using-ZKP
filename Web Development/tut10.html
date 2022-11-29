@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Ids and Classes in HTML</title>
+</head>
+<body>
+    <h3>Ids and classes tutorial</h3>
+    <!-- id = identifier -->
+    <!-- so in the same page there can not be any two tags having the same id -->
+    <!-- classes consist of certain properties which the user defines and when we appoint a class to a tag that means all the properties will be applied to the entire tag region -->
+    <!-- we can assign multiple classes to a tag but seprating names by spaces -->
+    <div id="mainBox" class="redBg blackborder">
+        this is main box
+    </div>
+    <!-- Emmet -->
+    <!-- . operator is used for class eg. span.redBg gives us the tag which is mentioned below-->
+    <!-- # is used for Id eg. span#spanId gives us the tag which is mentioned below-->
+    <span class="redBg"></span>
+    <span id="spanId"></span>
+    <!-- div.redBg.blackBorder.anotherClass writing this gives us the tag below -->
+    <div class="redBg blackBorder anotherClass"></div>
+    <!-- emmet takes div tag as default -->
+    <!-- .blackBorder gives us the result which is below -->
+    <div class="blackBorder"></div>
+    <!-- span.redBg.blackBorder.anotherClass*4 this basically gives us 4 tags with the same characteristics -->
+    <span class="redBg blackBorder anotherClass">first</span>
+    <span class="redBg blackBorder anotherClass">second</span>
+    <span class="redBg blackBorder anotherClass">third</span>
+    <span class="redBg blackBorder anotherClass">fourth</span>
+</body>
+</html>

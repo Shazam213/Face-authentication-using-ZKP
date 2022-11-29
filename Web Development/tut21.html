@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Ubuntu';
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            background-color: rgb(231, 182, 139);
+            /* margin auto is used to make things align themselves in the center */
+        }
+        .item{
+            border : 3px solid gray;
+            margin :12px 3px;
+            padding:12px 3px;
+            background-color: rgb(206, 187, 187);
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */
+            /* clear : left; */
+            /* this means any element which has float left should not overlap this part */
+            clear: both;
+            /* this means any element which has float left or right should not overlap this part */
+            width: 100%;
+        }
+        
+    p,h3{
+        /* property written at last is followed */
+        text-align: right;
+        text-align: left;
+        text-align: center;
+        text-align: justify;
+    }
+    h1{
+        margin: 23px auto;
+        /* only margin not works because width is not specified */
+        width: 455px;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptas delectus odit rem doloribus cum, quaerat, ad ipsa cupiditate ipsam suscipit quos reprehenderit omnis eos ut consectetur odio a exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dignissimos asperiores neque, consequatur tempore unde nobis tempora, ipsa quisquam ea beatae commodi eveniet perspiciatis odio! Totam dicta veritatis illo numquam consectetur, nostrum possimus corrupti.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer items</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ratione optio consequuntur quas commodi fuga et, ut quam architecto pariatur id, aperiam, laboriosam animi quia hic accusantium quo mollitia? Cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nulla facere accusamus exercitationem, et doloribus porro quisquam nisi. Hic temporibus qui enim impedit vitae veniam quas, modi error laborum eius veritatis quibusdam laudantium ullam? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit error perspiciatis autem numquam quo vitae doloremque ad. Error quasi, temporibus ducimus totam non culpa exercitationem sit sequi sunt corporis?
+
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt incidunt molestiae eveniet possimus debitis odio nobis obcaecati, optio odit amet at perferendis, eos, eius necessitatibus deserunt perspiciatis aspernatur facilis?
+            </p>    
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt incidunt molestiae eveniet possimus debitis odio nobis obcaecati, optio odit amet at perferendis, eos, eius necessitatibus deserunt perspiciatis aspernatur facilis?
+            </p>    
+        </div>
+
+    </div>
+</body>
+</html>

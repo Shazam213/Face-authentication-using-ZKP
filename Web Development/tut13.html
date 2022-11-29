@@ -1,0 +1,30 @@
+<!-- inline css gets more preference over external or internal CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- this is how you link a css file in HTML -->
+    <!-- <link rel="stylesheet" href="tut13.css"> -->
+    <style>
+        p{
+            color: purple;
+            background-color: seagreen !important;
+        }
+    </style>
+        <link rel="stylesheet" href="tut13.css">
+        <!-- the thing that you write afterwards gets more precedence like if we had written link before style then the characteristics of internal would have been applied -->
+        <!-- using !important can help speccify which characteristic is to applied if an option is available -->
+
+</head>
+<body>
+    <h3>This is CSS tutorial</h3>
+    <!-- Now if we comment the next lines and remove the style tags inside the p tag then everything will appear in purple -->
+    <!-- <p style="color: red; background-color: yellow;">THis tutorial will teach you everything that you need to know abpout HTML/CSS</p> -->
+    <p>THis tutorial will teach you everything that you need to know abpout HTML/CSS</p>
+    <!-- Not the best way because using too much of this will make your html code messy -->
+    <!-- Maximise using internal and external CSS -->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(192, 234, 129);
+            padding:34px;
+            margin: 34px auto;
+            width: 664px;
+        }
+        a{
+            text-decoration: none;
+            /* this removes the line underneath read more */
+            color: black;
+        }
+        a:hover{
+            color: black;
+            /* this means whenever we will hover above the things written in this tag their color changes to black */
+            background-color: yellow;
+        }
+        /* a:visited{
+            background-color: pink;
+        } */
+        a:active{
+            background-color: darkblue;
+        }
+        .btn{
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: crimson;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            /* this is to have the cursor converted to pointer whenever the cursor hovers over the buttons in class btn */
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: darkgoldenrod;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime consequatur corrupti impedit alias rem dolorem, quam quod suscipit veritatis tempore nesciunt, expedita in commodi aspernatur ex est a blanditiis dignissimos nostrum! Earum, nemo tenetur?</p>
+        <a href="https://www.facebook.com/" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

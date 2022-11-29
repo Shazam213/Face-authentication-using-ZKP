@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* Initializing the container as flex */
+            /* Flex properties for conatiner */
+            /* flex-direction: row; */
+            /* default value of flex-direction is row */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* default value is no wrap */
+            /* flex-flow: row-reverse wrap ; */
+            /* this is a shorthand for flex-direction and flex-wrap:  */
+
+            /* will justify the content in horizontal direction: ; */
+            /* justify-content: center; */
+            /* justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+            /* will justify the content in vertical direction: ; */
+            /* align-items: center;  */
+            /* align-items: flex-end; */
+            /* align-items: flex-start;
+            align-items: stretch; */
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 2px;
+            padding: 2px;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Flex properties for Flex Items */
+        #item-1 {
+            /* order: 2; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            flex-basis: 20px;
+            /* whenever flex-direction is set to row flex-basis will control width */
+            /* whenever flex-direction is set to column flex-basis will control height */
+        }
+
+        #item-2 {
+            /* flex-grow: 2; */
+            /* flex-shrink: 3; */
+        }
+
+        #item-3 {
+            /* order: 40; */
+            /* flex: 2 2 230px; */
+            /* Specifies the components of a flexible length: the flex grow factor and flex shrink factor, and the flex basis.
+
+            Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First</div>
+        <div class="item" id="item-2">Second</div>
+        <div class="item" id="item-3">Third</div>
+        <!-- <div class="item" id="item-4">Fourth</div>
+        <div class="item" id="item-5">Fifth</div>
+        <div class="item" id="item-6">Sixth</div> -->
+    </div>
+</body>
+
+</html>

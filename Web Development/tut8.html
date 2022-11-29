@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action=" backend.php ">
+        <!-- div is a block element -->
+        <label for="name"> Name</label>
+        <div>
+            <!-- input tag is an inline element -->
+            <input type="text" name="myName" id = "name">
+        </div>
+        <br>
+        <div>
+            Role <input type="text" name="myRole">
+        </div>
+        <br>
+        <!-- name means jisse backend wo specific email ko pehchanega -->
+        <div>
+            Email <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date :<input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus <input type="number" name="" id="">
+        </div>
+        <br>
+        <!-- <div>
+            Are u eligible <input type="checkbox" name="myEligibility" >
+        </div> -->
+        <!-- if by default u want the checkbok to be checked then write checked after the last attribute -->
+        <label for="chck"> Are u eligible </label>
+        <div>
+             <input type="checkbox" name="myEligibility" id="chck" checked>
+        </div>
+        <br>
+        <!-- since name is same we can only check one of the two -->
+        <div>
+            Gender: Male<input type="radio" name="myGender" >  Female<input type="radio" name="myGender" >
+        </div>
+        <br>
+        <div>
+            Write about urself :<br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <!-- if by default u want the select to be filled then use selected keyword after the last attribute -->
+        <div>
+            <label for="car">Car</label>
+            <select name="myCAR" id="car">
+                <option value="ind" selected>Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset now">
+        </div>
+        
+    </form>
+</body>
+</html>
